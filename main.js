@@ -189,12 +189,12 @@ const ready_texts = function() {
 
 // actions following consent
 const consent_submit = function() {
-    // if user ID is manually given, store it
-    if (misc.user_id === "noid" && document.getElementById("prolific_id").value.length > 0) {
+    // If user ID is manually given, store it
+    if (misc.user_id === "noid" && document.getElementById("prolific_id")?.value.length > 0) {
         misc.user_id = document.getElementById("prolific_id").value;
     }
 
-    // go to the preliminaries division unless wrong device is detected [n15]
+    // Check for wrong device and redirect appropriately
     if (misc.device === 'mobile') {
         if (!is_mobile()) {
             switch_div('intro', 'notmobile');
@@ -204,13 +204,28 @@ const consent_submit = function() {
         switch_div('intro', 'notdesktop');
         return;
     }
-    move_to_prelim('intro');
+
+    // Move directly to the Qualtrics segment1
+    move_to_segment1('intro');
 };
 
-const move_to_prelim = function(current) {
-    switch_div(current, 'prelim');
-    set_screen();
+
+// Function to move to Segment 1 (Qualtrics Segment 1)
+const move_to_segment1 = function(current) {
+    switch_div(current, 'qualtrics-segment-1');
 };
+
+//Function to go from Segment 1 to Media
+const segment1_to_media = function() {
+    switch_div('qualtrics-segment-1', 'media');
+};
+
+//Function to go from Media to Segment 2
+const media_to_segment2 = function() {
+    switch_div('media', 'qualtrics-segment-2');
+};
+
+
 
 
 // image file names

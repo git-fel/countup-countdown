@@ -2,13 +2,13 @@
 <html>
 
 <head><!-- [n1] head section -->
-    <link rel="icon" type="image/png" href="./media/lgo.png">
-    <title>Template SST study</title>
+    <link rel="icon" type="image/png" href="./media/NYUlogo.png">
+    <title>Study 1</title>
     <meta charset="utf-8">
     <!-- Use noindex [n4] -->
     <!-- <meta name="robots" content="noindex, nofollow" /> -->
     <meta name="googlebot" content="notranslate"> <!-- [n2]  -->
-    <meta name="author" content="Gaspar Lukacs">
+    <meta name="author" content="Felicia Tan">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no,maximum-scale=1">
     <script src="./utils/disptime.js"></script>
     <script src="./utils/jscd.js"></script>
@@ -47,35 +47,25 @@
     <div id="intro" class="page">
         <div style="display:flex;justify-content:space-between;">
             <div style="float:left">
-                <img src="./media/uni_logo_1.png" alt="" style="max-height:160px;max-width:100%;">
-            </div>
-            <div style="float:right">
-                <img src="./media/uni_logo_2.png" alt="" style="max-height:160px;max-width:100%;">
+                <img src="./media/NYUlogo.png" alt="" style="max-height:160px;max-width:100%;">
             </div>
         </div>
         <div id="intro_text">
         </div>
     </div>
 
-    <div id="prelim" class="page">
+    <!-- Qualtrics Segment 1 -->
+    <div id="qualtrics-segment-1" class="page" style="width: 100%; height: 100vh;">
+        <iframe
+            src="https://nyu.qualtrics.com/jfe/form/SV_3KSvxyTf8JR3tAO"
+            width="100%"
+            height="100%"
+            frameborder="0"
+            style="border: none;">
+        </iframe>
     </div>
 
-    <div id="story_sequence" class="page">
-        <div id='story_instruction'>
-        </div>
-        <hr>
-        <div class="center">
-            <div class='img_div' id='sapling_1_div' ondrop="drop(event)" ondragover="let_drop(event)"></div>
-            <div class='img_div' id='sapling_3_div' ondrop="drop(event)" ondragover="let_drop(event)"></div>
-            <div class='img_div' id='sapling_2_div' ondrop="drop(event)" ondragover="let_drop(event)"></div>
-            <br>
-            <div class='img_targ' id='sapling_1_targ' ondrop="drop(event)" ondragover="let_drop(event)"></div>
-            <div class='img_targ' id='sapling_2_targ' ondrop="drop(event)" ondragover="let_drop(event)"></div>
-            <div class='img_targ' id='sapling_3_targ' ondrop="drop(event)" ondragover="let_drop(event)"></div>
-        </div>
-        <hr>
-        <button class="main_button class_next" type="button" onclick="sequence_submit();"></button>
-    </div>
+    
 
     <div id="media" class="page">
         <p id='media_info'></p>
@@ -90,6 +80,21 @@
         <button class="main_button class_next" id="media_submitter" type="button" onclick="media_submit();" disabled>
         </button>
     </div>
+
+
+
+    <!-- Qualtrics Segment 2 -->
+    <div id="qualtrics-segment-2" class="page" style="width: 100%; height: 100vh; display: none;">
+        <iframe
+            src="https://nyu.qualtrics.com/jfe/form/SV_3aSvlGBpjeY90XQ"
+            width="100%"
+            height="100%"
+            frameborder="0"
+            style="border: none;">
+        </iframe>
+    </div>
+
+
 
     <div id="rt_instructions" class="page">
     </div>

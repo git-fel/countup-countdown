@@ -36,17 +36,31 @@ const tt = {
             </div>
 
             <p><b>Aim:</b>
-                <br>In the present experiment, we examine certain influencing factors on response inhibition. During the
-                test, participants are asked to respond, in each trial, with either of two response keys depending on
-                the
-                item presented on the screen. On a subset of trials, the item is followed by a second item (a stop
-                signal),
-                in which case participants should abort the response already initiated and not press any keys.
+                <ul>
+                    <li>This experiment examines your performance of visual analysis tasks.
+                    <li>You will answer questions about the <eb>positions, sizes, colors, materials, and shapes of objects</b>. 
+                    <li>Carefully analyze each image and respond to the multiple-choice questions as <b>quickly</b> and <b>accurately</b> as possible.
+                    <li>You will be given a <b>trial</b> to familiarize with the task.
+                </ul>
+                
+            </p>
+            <p><b>Procedure:</b>
+                
+                <ol>
+                    <li>Fill in a pre-experiment survey.
+                    <li>You will be given guided instructions and a <b>trial</b> to familiarize with the task.
+                    <li><b>Part 1:</b> Answer 20 questions (shown in a single page), then click on "submit".
+                    <li><b>Part 2:</b> The next 20 questions will load. Answer them, then click on "submit".
+                    <li>Fill in a post-experiment survey.
+                </ol>
+
+                <i>The full study takes about <b>15 minutes</b> to complete. Complete it in a single session, without any pause.</i>
             </p>
 
             <p><b>Payment:</b>
+            
                 <br>
-                The task takes around 10 minutes. It should be done within one session, without any long (more than a few minute) pause.
+                
                 <span id="pay_info">
                     Your valid completed participation will be rewarded with 2 GBP.
                 </span>
@@ -60,12 +74,10 @@ const tt = {
 
             <p><b>Technical Requirements:</b>
             <br>
-                <span id='device_type'></span> We strongly recommend using Google Chrome or Mozilla Firefox browser for
-                this test. Before starting, please switch the browser to fullscreen mode (press <kbd>F11</kbd> or, on Mac, <kbd>Ctrl</kbd>+<kbd>Command</kbd>+<kbd>F</kbd> or <kbd>Fn</kbd>+<kbd>F</kbd>), otherwise it will be switched automatically following your consent. The fullscreen mode should be kept throughout the response time experiment (otherwise you get a warning and can only continue after switching back to fullscreen).
-                <br>This application was tested thoroughly, but we cannot take responsibility for potential technical
-                issues
-                in the context of your
-                specific software and hardware. Please contact please contact <a target="_blank" href="https://gasparl.github.io/">Gáspár Lukács</a> at <a href="mailto:lkcsgaspar@gmail.com">lkcsgaspar@gmail.com</a> if you run into any trouble.
+                <span id='device_type'></span>. After clicking on "Consent & Continue" below, the browser will be switched automatically to fullscreen mode. This fullscreen mode should be kept throughout the experiment.
+                <br>
+                <br>
+                Please contact Felicia Tan at <a href="mailto:felicia.tan@nyu.edu">felicia.tan@nyu.edu</a> if you run into any technical issues.
             </p>
 
             <p><b>Anonymity and Privacy:</b>
@@ -92,8 +104,8 @@ const tt = {
                                     <input id="prolific_id" style="width: 230px;"
                                     maxlength="30" onkeypress="return /[0-9a-zA-Z]/i.test(event.key)">.
                                     `,
-    device_mobile: 'This experiment should be completed on a regular smartphone.',
-    device_desktop: 'This experiment should be completed on a regular desktop computer.',
+    device_mobile: 'This experiment should be completed on a regular smartphone',
+    device_desktop: 'This experiment should be completed on a regular desktop computer or laptop',
     prelim: /*html*/`
     Please give us the following demographic information about yourself.
     <br><br>
