@@ -183,8 +183,8 @@ const ready_texts = function() {
     });
     // other potential events to note: 'oncopy', 'oncut', 'ondrag', 'onchange', 'oninput', 'selectionchange'
 
-    // If the browser supports the JavaScript included (essentially: ES6), switch to first division.
-    switch_div('init_fail', start_div, 0, false);
+    switch_div(start_div, start_div, 0, false);
+
 };
 
 // actions following consent
@@ -255,10 +255,7 @@ const set_images = function() {
             }
             console.log('Preloaded images.');
         })
-        .catch(function(err) {
-            console.error('Failed', err);
-            alert('Failed to load images! Try reloading the page or contact lkcsgaspar@gmail.com');
-        });
+       ;
 
     // set up drag and drop mechanism [ndrag]
     // for divs containing the images at start
