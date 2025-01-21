@@ -1,4 +1,4 @@
-let countdown = 5; // Timer duration in seconds
+let countdown = 30; // Timer duration in seconds
 const timerElement = document.getElementById('timer');
 const button = document.getElementById('returnButton');
 
@@ -21,7 +21,7 @@ const startTimer = () => {
 // Redirect the user back to the survey
 //change the part after /form/  to  survey ID, follwed by    ?next=segment2
 button.addEventListener('click', () => {
-    window.location.href = "https://nyu.qualtrics.com/jfe/form/SV_aVqd6yJgvdQUHWu?next=segment2";
+    window.location.href = "https://nyu.qualtrics.com/jfe/form/SV_aVqd6yJgvdQUHWu?next=BL_bC8RlbW8DO3GiV0";
 });
 
 // Start the timer on page load
