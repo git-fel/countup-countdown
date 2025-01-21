@@ -22,8 +22,9 @@ const startTimer = () => {
 // Redirect the user back to the survey
 // Make sure the part after `/form/` matches your Qualtrics survey ID
 button.addEventListener('click', () => {
-    window.location.href = "https://nyu.qualtrics.com/jfe/form/SV_aVqd6yJgvdQUHWu?next=BL_bC8RlbW8DO3GiV0";
+    window.location.href = "https://nyu.qualtrics.com/jfe/form/SV_aVqd6yJgvdQUHWu?redirected=1&next=BL_bC8RlbW8DO3GiV0";
 });
+
 
 // Start the timer on page load
 window.onload = startTimer;
