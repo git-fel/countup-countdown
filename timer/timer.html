@@ -1,20 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timer</title>
-    <link rel="stylesheet" href="./style.css"> <!-- Link to a shared CSS file if needed -->
-    <script src="./timer.js" defer></script> <!-- Link to your JavaScript file for timer logic -->
+    <title>Retrieving next batch...</title>
+    <link rel="stylesheet" href="timer.css">
+    <script src="timer.js" defer></script>
 </head>
-
 <body>
-    <div id="timer-container" style="text-align: center; margin-top: 50px;">
-        <h1>Countdown Timer</h1>
-        <p id="timer-display">30 seconds remaining</p>
-        <button id="start-timer">Start Timer</button>
-    </div>
+    <div id="notification">Retrieving the next image batch from database...</div>
+    <div id="timer" style="font-size: 48px; font-weight: bold;">5</div>
+    <button id="returnButton" style="display: none; font-size: 20px; padding: 10px 20px; margin-top: 20px;">
+        Continue
+    </button>
 </body>
-
 </html>
